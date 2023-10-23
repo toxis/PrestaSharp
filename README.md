@@ -179,6 +179,7 @@ List<long> prestaSharpOrderIds = this.OrderFactory.GetIdsByFilter(filter, "id_DE
 - Specific Price Rules
 - States
 - Stock Availables
+- Stores
 - Tags
 - Tax
 - Tax Rule
