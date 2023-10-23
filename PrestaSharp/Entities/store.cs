@@ -18,8 +18,8 @@ namespace Bukimedia.PrestaSharp.Entities
         public string fax { get; set; }
         public string email { get; set; }
         public int active { get; set; } = 1;
-        public List<Entities.AuxEntities.language> name { get; set; }
-        public List<Entities.AuxEntities.language> address1 { get; set; }
-        public List<Entities.AuxEntities.language> address2 { get; set; }
+        public List<Entities.AuxEntities.language> name { get; set; } = new List<AuxEntities.language>();
+        public List<Entities.AuxEntities.language> address1 { get; set; } = new List<AuxEntities.language>();
+        public List<Entities.AuxEntities.language> address2 { get; set; } = new List<AuxEntities.language>();
     }
 }
