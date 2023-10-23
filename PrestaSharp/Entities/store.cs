@@ -6,10 +6,12 @@ namespace Bukimedia.PrestaSharp.Entities
     [XmlType(Namespace = "Bukimedia/PrestaSharp/Entities")]
     public class store : PrestaShopEntity, IPrestaShopFactoryEntity
     {
+        public static string EmptyHours = "[[\"\"],[\"\"],[\"\"],[\"\"],[\"\"],[\"\"],[\"\"]]";
+
         public long? id { get; set; }
         public long? id_country { get; set; }
         public long? id_state { get; set; }
-        public string hours { get; set; }
+        public List<Entities.AuxEntities.language> hours { get; set; } = new List<AuxEntities.language>();
         public string postcode { get; set; }
         public string city { get; set; }
         public float? latitude { get; set; }
